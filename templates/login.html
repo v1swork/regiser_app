@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Авторизация{% endblock %}
+{% block content%}
+<h1>Авторизация</h1>
+
+{% if error %}
+    <p class="error">{{ error }}</p>
+{% endif %}
+
+<form method="POST">
+    <label>Имя пользователя:</label>
+    <input type="text" name="username" required><br><br>
+
+    <label>Пароль:</label>
+    <input type="password" name="password" required><br><br>
+    
+    <button type="submit" class="btn">Войти</button>
+</form>
+<p>Нет аккаунта? <a href="/register">Зарегистрироваться</a></p>
+{% endblock %}

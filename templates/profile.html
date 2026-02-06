@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %} Профиль {% endblock %}
+{% block content %}
+<h1>личный кабинет</h1>
+<p>Здравствуйте, <b>{{ username }}</b>.</p>
+<button class="btn">Добавить</button>
+<button class="btn">Изменить</button>
+<button class="btn">Удалить</button>
+<button class="btn">Отметить выполеным</button>
+<p>Здесь можно сделать личный настройки и т.д и т.п.</p>
+<a href="/logout" class="btn">Выйти</a>
+{% endblock %}
